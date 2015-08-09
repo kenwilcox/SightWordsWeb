@@ -12,8 +12,15 @@
 
   <div class="jumbotron">
     <div class="container">
-      <h1 data-ng-model="vm.word"></h1>
-      <a class="btn btn-primary btn-lg" data-ng-click="vm.getWord()">Yes »</a>
+      <h1>{{vm.word}}</h1>
+      <button class="btn btn-primary btn-lg" ng-click="vm.getCard()">Yes »</button>
+
+      <button ng-click="vm.getCard()">
+  Increment
+</button>
+<span>
+  count: {{count}}
+</span>
     </div>
   </div>
   <ul data-ng-repeat="card in vm.prek">

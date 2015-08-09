@@ -10,8 +10,11 @@
       words.prek = data;
     });
 
-    function getCard() {
-      words.word = words.prek[Math.random() * (words.prek.length)];
-    }
+    this.getCard = function () {
+      var index = Math.floor(Math.random() * words.prek.length);
+      var card = words.prek[index];
+      console.log(card);
+      words.word = card.word;
+    };
   }]);
  }());
