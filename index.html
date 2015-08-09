@@ -8,7 +8,13 @@
   <link rel="stylesheet" type="text/css" href="app.css" />
 </head>
 
-<body>
-  
+<body data-ng-controller="WordController as words">
+
+  <ul data-ng-repeat="card in words.prek">
+    <li>{{card.word}}</li>
+  </ul>
+
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>  
 </body>
 </html>
