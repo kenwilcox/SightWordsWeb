@@ -8,9 +8,15 @@
   <link rel="stylesheet" type="text/css" href="app.css" />
 </head>
 
-<body data-ng-controller="WordController as words">
+<body data-ng-controller="WordController as vm">
 
-  <ul data-ng-repeat="card in words.prek">
+  <div class="jumbotron">
+    <div class="container">
+      <h1 data-ng-model="vm.word"></h1>
+      <a class="btn btn-primary btn-lg" data-ng-click="vm.getWord()">Yes »</a>
+    </div>
+  </div>
+  <ul data-ng-repeat="card in vm.prek">
     <li>{{card.word}}</li>
   </ul>
 
