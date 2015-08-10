@@ -13,7 +13,7 @@
     this.getCard = function () {
       var index = Math.floor(Math.random() * words.prek.length);
       var card = words.prek[index];
-      console.log(card);
+      //console.log(card);
       words.word = card.word;
     };
   }]);
