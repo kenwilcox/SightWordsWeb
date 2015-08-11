@@ -1,8 +1,4 @@
 /* Custom style goes here */
-.jumbotron {
-  container {
-    h1 {
-      font-size: 200px;
-    }
-  }
+.jumbotron h1 {
+      font-size: 100px;
 }
