@@ -13,13 +13,11 @@
   <div class="jumbotron">
     <div class="container">
       <h1>{{vm.word}}</h1>
-      <button class="btn btn-primary btn-lg" ng-click="vm.getCard()">Yes »</button>
+      <button class="btn btn-primary btn-lg" ng-click="vm.getCard()">{{vm.caption}} »</button>
+      <span ng-hide="vm.wordNo <= 0">Word {{vm.wordNo}} of {{vm.count}}</span>
     </div>
   </div>
-<!--   <ul data-ng-repeat="card in vm.prek">
-    <li>{{card.word}}</li>
-  </ul> -->
-
+  
   <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
   <script type="text/javascript" src="app.js"></script>  
 </body>
