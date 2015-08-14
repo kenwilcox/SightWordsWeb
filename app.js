@@ -12,7 +12,7 @@
     vm.caption = "Yes";
 
     this.loadData = function() {
-      $http.get('/prek.json').success(function (data) {
+      $http.get('/kinder.json').success(function (data) {
         vm.prek = data;
         vm.prekCache = data;
         vm.count = data.length;

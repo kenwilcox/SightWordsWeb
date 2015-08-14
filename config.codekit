@@ -2803,17 +2803,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/kinder copy.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/kinder copy.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/kinder copy-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
 	"\/kinder.json": {
 		"fileType": 524288,
 		"ignore": 1,
