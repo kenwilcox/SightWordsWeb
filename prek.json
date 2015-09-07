@@ -1,8 +1,8 @@
 [
   {"word": "a", "sound":"audio/a.mp3"},
   {"word": "and", "sound":"audio/and.mp3"},
-  {"word": "away"},
-  {"word": "big"},
+  {"word": "away", "sound":"audio/away.mp3"},
+  {"word": "big", "sound":"audio/big.mp3"},
   {"word": "blue"},
   {"word": "can"},
   {"word": "come"},
