@@ -15,6 +15,7 @@
     <h1>{{vm.word}}</h1>
     <button class="btn btn-primary btn-lg" ng-click="vm.getCard()">{{vm.caption}} »</button>
     <span ng-hide="vm.wordNo <= 0">Word {{vm.wordNo}} of {{vm.count}}</span>
+    <button class="btn btn-success" ng-click="vm.getHint()" ng-show="vm.cardHasSound()">Hint</button>
   </div>
   
   <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>

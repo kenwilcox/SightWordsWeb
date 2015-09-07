@@ -10,9 +10,10 @@
     vm.count = 0;
     vm.wordNo = 0;
     vm.caption = "Yes";
+    vm.card = {};
 
     this.loadData = function() {
-      $http.get('/kinder.json').success(function (data) {
+      $http.get('/prek.json').success(function (data) {
         vm.prek = data;
         vm.prekCache = data;
         vm.count = data.length;
@@ -28,9 +29,9 @@
       }
 
       var index = Math.floor(Math.random() * vm.prekCache.length);
-      var card = vm.prekCache[index];
+      vm.card = vm.prekCache[index];
       vm.prekCache.splice(index, 1);
-      vm.word = card.word;
+      vm.word = vm.card.word;
       vm.wordNo = vm.count - vm.prekCache.length;
       
       if (vm.wordNo === vm.count) {
@@ -38,6 +39,18 @@
       } else {
         vm.caption = "Next";
       }
+    };
+
+    this.getHint = function () {
+      var sound = vm.card.sound;
+      if (sound) {
+        var audio = new Audio(sound);
+        audio.play();
+      }
+    };
+
+    this.cardHasSound = function () {
+      return vm.card.sound !== undefined;
     };
 
     this.loadData();
