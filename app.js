@@ -44,7 +44,11 @@
     this.getHint = function () {
       var sound = vm.card.sound;
       if (sound) {
-        new Audio(sound).play();
+        if (!vm.card.audio) {
+          var audio = new Audio(sound);
+          vm.card.audio = audio;
+        }
+        vm.card.audio.play();
       }
     };
 
